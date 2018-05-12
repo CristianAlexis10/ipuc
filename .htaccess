@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteRule ^inicio$ index.php?controller=views
+#LOGIN
+RewriteRule ^validar-documento$ index.php?controller=auth&a=validateUserCC
+RewriteRule ^validar-contrasena$ index.php?controller=auth&a=validatePass
+#ADMIN
+RewriteRule ^administracion$ index.php?controller=views&a=admin
+RewriteRule ^perfil$ index.php?controller=user&a=profile
